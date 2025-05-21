@@ -1,0 +1,405 @@
+/* 首屏区域样式 */
+.hero {
+    padding: 10rem 2rem 6rem;
+    text-align: center;
+    background: linear-gradient(1deg,  rgb(197 173 215 / 90%) 0%, rgb(244 188 188 / 90%) 100%);
+    color: var(--white);    
+    height: 550px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 功能区域样式 */
+.features {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 40px 30px;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.feature-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #4a90e2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon-wrapper {
+    transform: scale(1.1);
+}
+
+.feature-icon-wrapper i {
+    font-size: 36px;
+    color: var(--white);
+    margin: 0;
+}
+
+.feature-card h3 {
+    margin: 20px 0 15px;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.feature-card p {
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.feature-details {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.feature-card:hover .feature-details {
+    height: auto;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.feature-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-details li {
+    color: var(--gray);
+    margin: 8px 0;
+    font-size: 14px;
+}
+/* 了解更多 */
+.learn-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .learn-more {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 功能预览样式 */
+.preview {
+    padding: 80px 0;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.preview h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.preview-slider {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--light-gray);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+/* 价格方案样式 */
+.pricing {
+    padding: 80px 0;
+    background-color: var(--background-color);
+}
+
+.pricing h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.pricing-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card.featured {
+    transform: scale(1.05);
+    border: 2px solid var(--primary-color);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.pricing-header {
+    margin-bottom: 30px;
+}
+
+.pricing-header h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.price {
+    font-size: 36px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.price .period {
+    font-size: 16px;
+    color: var(--gray);
+    font-weight: normal;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.pricing-features li {
+    padding: 10px 0;
+    color: var(--gray);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+/* 客户评价样式 */
+.testimonials {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.author-info p {
+    font-size: 14px;
+    color: var(--gray);
+    margin: 0;
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-aos] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-aos-delay="100"] {
+    transition-delay: 0.1s;
+}
+
+[data-aos-delay="200"] {
+    transition-delay: 0.2s;
+}
+
+[data-aos-delay="300"] {
+    transition-delay: 0.3s;
+} 
+
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-light);
+}

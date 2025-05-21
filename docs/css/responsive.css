@@ -1,0 +1,123 @@
+/* 响应式样式 */
+@media screen and (max-width: 768px) {
+    /* 导航栏响应式 */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* 首屏区域响应式 */
+    .hero {
+        padding: 120px 0 60px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero .subtitle {
+        font-size: 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* 功能区域响应式 */
+    .features {
+        padding: 60px 0;
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* 客户评价响应式 */
+    .testimonials {
+        padding: 60px 0;
+    }
+
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+
+    .quote {
+        font-size: 20px;
+    }
+
+    /* 页脚响应式 */
+    .footer {
+        padding: 40px 0 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* 功能详情页响应式 */
+    .feature-details {
+        padding: 100px 0 60px;
+    }
+
+    .feature-detail-card {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .feature-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .feature-content h2 {
+        font-size: 24px;
+    }
+
+    .feature-example,
+    .feature-tips {
+        padding: 15px;
+    }
+}
+
+/* 平板设备适配 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 大屏幕适配 */
+@media screen and (min-width: 1025px) {
+    .container {
+        padding: 0 40px;
+    }
+} 

@@ -1,0 +1,100 @@
+/* 功能详情页样式 */
+.feature-details {
+    padding: 120px 0 80px;
+    background-color: var(--white);
+}
+
+.feature-details h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 36px;
+    color: var(--text-color);
+}
+
+.feature-detail-card {
+    display: flex;
+    margin-bottom: 60px;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature-detail-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    flex: 0 0 100px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.feature-icon i {
+    font-size: 60px;
+    color: var(--primary-color);
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.feature-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+.feature-example {
+    background-color: var(--light-gray);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.feature-example h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.feature-tips {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.feature-tips h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.feature-tips ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feature-tips li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: var(--gray);
+}
+
+.feature-tips li:before {
+    content: "•";
+    color: var(--primary-color);
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+} 
