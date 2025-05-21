@@ -5,7 +5,7 @@
 ![输入图片说明](docs/images/reviews.png)
 ![输入图片说明](docs/images/automent.png)
 ![输入图片说明](docs/images/monitor.png)
-![输入图片说明](docs/images/reviews.png)
+![输入图片说明](docs/images/imaga_20250512215705.png)
 # 小采红软件功能
 🎈 自动化数据采集：在 “笔记采集” 界面，能按设定关键词，比如 “旅游攻略”、“美食探店” 等。还能按综合、点赞数等规则排序，不管是攻略、风景还是其他类型笔记，都给你整整齐齐列出来，轻松掌握热门内容风向🧭
 
